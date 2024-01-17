@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('fonts/Yekan.ttf')format("truetype");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#topGif{
+    display: block;
+    height: 60px;
+    width: 1850px;
+    background: url("images and gif/digi.gif");
+    background-size:cover ;
+}
+#header{
+    height: 65px;
+    width: 1850px;
+}
+#header-right{
+    height: 65px;
+    width: 880px;
+    float: right;
+}
+#header-left{
+    height: 65px;
+    width: 310px;
+    float: left;
+}
+#logo{
+    display: block;
+    height: 60px;
+    width: 120px;
+    background: url("images and gif/logo.png") no-repeat center;
+    float: right;
+    margin-right: 105px;
+    margin-top: 5px;
+}
+#text-box{
+    display: block;
+    height: 65px;
+    width: 608px;
+    float: right;
+    margin-right: 15px;
+    position: relative;
+
+}
+#text-box input{
+
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    height: 45px;
+    width: 603px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    float: right;
+    background: #eee;
+    direction: rtl;
+    padding-right: 52px;
+    font-family: yekan;
+}
+#icon-search{
+    height: 70px;
+    padding-top: 37px;
+    width: 35px;
+    display: block;
+    background:url("images and gif/search.png")no-repeat center;
+    background-size: 25px;
+    position: absolute;
+    right: 10px;
+}
+#basket{
+    height: 30px;
+    width: 32px;
+    display: block;
+    background: url("images and gif/logodigi.png") no-repeat center;
+    background-size: 25px;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+#login{
+    display: block;
+    height: 40px;
+    width: 140px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    float: right;
+    margin-top: 12px;
+    position: relative;
+    text-decoration: none;
+}
+#login-door{
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: url('image & gif/bx-log-in.svg')no-repeat center;
+    background-size: 25px;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 0px;
+
+}
+#login-text{
+    color: black;
+    font-family: yekan;
+    display: block;
+    padding-left: 7px;
+    padding-top: 7px;
+
+}
