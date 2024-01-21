@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins'  , "sans-serif";
+}
+:root{
+    --back-color: #4069e2;
+    --btn-color: white;
+}
+
+
+#banner{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.42),var(--back-color)) , url(images/barber.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
