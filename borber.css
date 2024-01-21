@@ -19,7 +19,7 @@
     width: 140px;
     position: absolute;
     top: 4%;
-    left:10%;
+    left:3%;
 }
 .banner-text{
     text-align: center;
@@ -64,6 +64,6 @@
 .banner-btn a:hover span{
     width: 100%;
 }
-.banner-btn a :hover{
-    color: #4069e2;
+.banner-btn a:hover{
+    color: black;
 }
