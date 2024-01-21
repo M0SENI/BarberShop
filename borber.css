@@ -15,3 +15,55 @@
     background-position: center;
     height: 100vh;
 }
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left:10%;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan' , cursive;
+}
+.banner-text p{
+   font-size: 20px;
+    font-style: italic;
+}
+.banner-btn{
+    margin: 70px auto;
+
+}
+.banner-btn a{
+    text-decoration: none;
+    width:150px ;
+    color: white;
+    margin: 0 10px;
+    border: .5px solid white;
+    padding: 12px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+
+}
+.banner-btn a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    transition: width 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+.banner-btn a :hover{
+    color: #4069e2;
+}
