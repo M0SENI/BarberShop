@@ -143,6 +143,7 @@ nav ul li a{
     width: 80%;
     margin: auto;
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
@@ -245,4 +246,199 @@ hr {
 .single-service:hover .service-desc {
     bottom: 40%;
     opacity: 1;
+}
+
+/*Testimonials*/
+
+#testimonials {
+    width: 100%;
+    padding: 70px 0;
+
+}
+.testimonial-row
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col
+{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px var(--back-color);
+    cursor: pointer;
+    transition: transform .5s;
+}
+.testimonial-col p {
+    font-size: 14px;
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.user-info .fa {
+    margin-left: 10px;
+    color: var(--btn-color);
+    font-size: 20px;
+}
+
+.user-info small {
+    color: var(--back-color);
+}
+
+.testimonial-col:hover {
+    transform: translateY(-7px);
+}
+/*----Footer style Here---*/
+#footer {
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+
+.footer-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left, .footer-right {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-row h1 {
+    margin: 10px 0;
+}
+.footer-row p {
+    line-height: 35px;
+}
+.footer-left .fa,.footer-right .fa {
+    font-size: 20px;
+    color: var(--btn-color);
+    margin: 10px;
+}
+
+.footer-img {
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+}
+.social-link {
+    text-align: center;
+}
+.social-link .fa {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid var(--btn-color);
+    margin: 40px 5px 0;
+    color: var(--btn-color);
+    cursor: pointer;
+    transition: .5s;
+}
+.social-link .fa:hover {
+    background: var(--btn-color);
+    color: #fff;
+    transform: translateY(-7px);
+}
+.social-link p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    .banner-btn h1{
+        font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/*Staff Part Responivness*/
+
+@media only screen and (max-width: 770px){
+    .title-text h1{
+        font-size: 35px;
+    }
+    .staff {
+        flex-basis: 100%;
+    }
+    .staff-img {
+        flex-basis: 100%;
+    }
+    .staff-img img {
+        width: 100%;
+    }
+
+}
+
+/*Services Responsivness*/
+@media only screen and (max-width: 700px){
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc p{
+        font-style: 12px;
+    }
+    .single-service:hover .service-desc{
+        bottom: 25% !important;
+    }
+
+}
+/*Testimonial Responsivness*/
+@media only screen and (max-width: 700px){
+    .testimonial-col {
+        flex-basis: 100%;
+    }
+}
+
+/*Footer responsivenness*/
+
+@media only screen and (max-width: 700px) {
+    .footer-left, .footer-right {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+
+    .footer-left {
+        padding: 0;
+    }
+
+    .footer-img {
+        top: 25%;
+    }
 }

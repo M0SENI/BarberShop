@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Barbershop</title>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family-Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display-swap" rel="">
@@ -42,6 +42,9 @@
         <h1>Why Choose Us?</h1>
     </div>
     <div class="staff-box">
+        <div class="staff-img">
+            <img src="images/" alt="">
+        </div>
         <div class="staff">
             <h1>Experienced Staff</h1>
             <div class="staff-desc">
@@ -82,7 +85,7 @@
     </div>
     <div class="service-box">
         <div class="single-service">
-            <img src="images/barber-1453064_640.jpg" alt="">
+            <img src="images/barberchair.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
                 <h3>Barbers</h3>
@@ -92,7 +95,7 @@
             </div>
         </div>
         <div class="single-service">
-            <img src="images/barber-2345701_640.jpg" alt="">
+            <img src="images/barberstuffs.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
                 <h3>barbers</h3>
@@ -102,7 +105,7 @@
             </div>
         </div>
         <div class="single-service">
-            <img src="images/barber-1007902_640.jpg" alt="">
+            <img src="images/borberstaff.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
                 <h3>borber</h3>
@@ -112,7 +115,7 @@
             </div>
         </div>
         <div class="single-service">
-            <img src="images/barbershop-4484297_640.jpg" alt="">
+            <img src="images/borbershop.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
                 <h3>Borbers</h3>
@@ -159,7 +162,54 @@
         </div>
     </div>
 </section>
+<section id="footer">
+    <div class="title-text">
+        <p>CONTACT</p>
+        <h1>Come And Taste Today</h1>
+    </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Opening Hours</h1>
+            <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 9pm</p>
+            <p><i class="fa fa-clock-o"></i>Saturday to Sunday - 9am to 11pm</p>
+        </div>
+        <div class="footer-right">
+            <h1>Get in Touch</h1>
+            <p>#25 Indiranagar, Bengaluru, India <i class="fa fa-map-maker"></i></p>
+            <p>codeiscodespace@gmail.com <i class="fa fa-paper-plane"></i></p>
+            <p>+9111111111 <i class="fa fa-phone"></i></p>
+        </div>
+    </div>
+    <div class="social-link">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-youtube-play"></i>
+        <p>Copyright CodeSpace YoutubeChannel</p>
+    </div>
+</section>
+<script>
+    var menuBtn =document.getElementById("menuBtn");
+    var sidenav =document.getElementById("sidenav");
+    var menu =document.getElementById("menu");
+    sidenav.style.right ="-250px"
+    menuBtn.onclick=function () {
+        if (sidenav.style.right == "-250px"){
+            sidenav.style.right = "0";
+            menu.src="icons/bx-x.svg";
+        }
+        else {
 
+            sidenav.style.right = "-250px";
+            menu.src="icons/bx-menu.svg";
+        }
+    }
+    // All animations will take exactly 500ms
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 2000,
+        speedAsDuration: true
+    });
+</script>
 
 </body>
 </html>
